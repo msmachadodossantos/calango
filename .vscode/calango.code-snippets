@@ -1,0 +1,15 @@
+{
+    "New file": {
+        "prefix": "New file",
+        "scope": "bat",
+        "body": [
+            "IF NOT EXIST \"${1:filename}\" (COPY /y NUL \"${1:filename}\")"
+        ]
+    },
+    "New folder": {
+        "prefix": "New folder",
+        "body": [
+            "IF NOT EXIST \"${1:folderName}\" (MD \"${1:folderName}\")"
+        ]
+    }
+}
