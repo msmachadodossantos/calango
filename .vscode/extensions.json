@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "jebbs.plantuml",
+        "wayou.vscode-todo-highlight",
+        "Zignd.html-css-class-completion"
+    ]
+}
