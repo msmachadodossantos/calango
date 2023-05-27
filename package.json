@@ -1,0 +1,21 @@
+{
+  "name": "calango",
+  "version": "0.0.0",
+  "description": "Calango is a high-performance User Interface Framework for web development, it is heavily based on Bootstrap and Material Design.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msmachadodossantos/calango.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Mario Sergio Machado dos Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msmachadodossantos/calango/issues"
+  },
+  "homepage": "https://github.com/msmachadodossantos/calango#readme"
+}
