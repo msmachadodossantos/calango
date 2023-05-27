@@ -1,0 +1,97 @@
+{
+    "editor.cursorStyle": "block",
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "explorer.compactFolders": false,
+    "editor.wordWrap": "bounded",
+    "editor.wrappingIndent": "same",
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [
+        120
+    ],
+    "html.format.wrapAttributes": "force-aligned",
+    "[abap]": {},
+    "[bat]": {
+        "editor.wordWrapColumn": 610,
+    },
+    "[bibtex]": {},
+    "[c]": {},
+    "[clojure]": {},
+    "[coffeescript]": {},
+    "[cpp]": {},
+    "[csharp]": {},
+    "[css]": {},
+    "[cuda-cpp]": {},
+    "[diff]": {},
+    "[dockercompose]": {},
+    "[dockerfile]": {},
+    "[fsharp]": {},
+    "[git-commit]": {},
+    "[git-rebase]": {},
+    "[go]": {},
+    "[groovy]": {},
+    "[haml]": {},
+    "[handlebars]": {},
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[ini]": {},
+    "[jade]": {},
+    "[java]": {},
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {},
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[latex]": {},
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[lua]": {},
+    "[makefile]": {},
+    "[markdown]": {},
+    "[objective-c]": {},
+    "[objective-cpp]": {},
+    "[perl]": {},
+    "[perl6]": {},
+    "[php]": {
+        "editor.defaultFormatter": "vscode.php-language-features"
+    },
+    "[plaintext]": {},
+    "[powershell]": {},
+    "[pug]": {},
+    "[python]": {},
+    "[r]": {},
+    "[razor]": {},
+    "[ruby]": {},
+    "[rust]": {},
+    "[sass]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[shaderlab]": {},
+    "[shellscript]": {},
+    "[slim]": {},
+    "[sql]": {},
+    "[stylus]": {},
+    "[swift]": {},
+    "[tex]": {},
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {},
+    "[vb]": {},
+    "[vue]": {},
+    "[vue-html]": {},
+    "[xml]": {},
+    "[xsl]": {},
+    "[yaml]": {}
+}
