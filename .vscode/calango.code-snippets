@@ -11,5 +11,13 @@
         "body": [
             "IF NOT EXIST \"${1:folderName}\" (MD \"${1:folderName}\")"
         ]
+    },
+    "hr": {
+        "prefix": "hr",
+        "scope": "javascript",
+        "body": [
+            "// ---------------------------------------------------------------------------------------------------------------------",
+        ],
+        "description": "Horizontal rule",
     }
 }
