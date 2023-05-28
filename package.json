@@ -1,7 +1,7 @@
 {
   "name": "calango",
   "version": "0.0.0",
-  "description": "Calango is a high-performance User Interface Framework for web development, it is heavily based on Bootstrap and Material Design.",
+  "description": "Calango is a high-performance User Interface Framework for web development. It is heavily based on Bootstrap and Material Design.",
   "scripts": {},
   "repository": {
     "type": "git",
