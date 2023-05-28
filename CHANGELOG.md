@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Carousel
 - Checkbox
 - Chips
-- Color palette
+- Color system
 - Date pickers
 - Dialogs
 - Divider
