@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Navigation rail
 - Progress Indicators
 - Radio button
+- RYB color palette
 - Search
 - Side sheets
 - Sliders
