@@ -52,6 +52,61 @@ exports.core = series(cleanCoreStyle, coreStyle, cleanCoreScript, coreScript);
 
 // ---------------------------------------------------------------------------------------------------------------------
 
+const gridSystemStyleSrc = "src/grid_system/scss/**/*.*";
+const gridSystemStyleDist = "dist/grid_system/css/";
+const gridSystemScriptSrc = "src/grid_system/js/**/*.*";
+const gridSystemScriptDist = "dist/grid_system/js/";
+
+function cleanGridSystemStyle() {
+  return gulp
+    .src(gridSystemStyleDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+function gridSystemStyle() {
+  return gulp
+    .src(gridSystemStyleSrc, { allowEmpty: true })
+    .pipe(sass({ outputStyle: "compressed" }, "").on("error", sass.logError))
+    .pipe(dest(gridSystemStyleDist));
+}
+
+function gridSystemScript() {
+  return gulp
+    .src(gridSystemScriptSrc, { allowEmpty: true })
+    .pipe(dest(gridSystemScriptDist))
+    .pipe(uglify())
+    .pipe(concat("core.js"))
+    .pipe(rename({ extname: ".min.js" }))
+    .pipe(dest(gridSystemScriptDist));
+}
+
+function cleanGridSystemScript() {
+  return gulp
+    .src(gridSystemScriptDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+exports.core = series(
+  cleanGridSystemStyle,
+  gridSystemStyle,
+  cleanGridSystemScript,
+  gridSystemScript
+);
+
+// ---------------------------------------------------------------------------------------------------------------------
+
 exports.default = function () {
-  watch(allSrc, series(cleanCoreStyle, coreStyle, cleanCoreScript, coreScript));
+  watch(
+    allSrc,
+    series(
+      cleanCoreStyle,
+      coreStyle,
+      cleanCoreScript,
+      coreScript,
+      cleanGridSystemStyle,
+      gridSystemStyle,
+      cleanGridSystemScript,
+      gridSystemScript
+    )
+  );
 };
