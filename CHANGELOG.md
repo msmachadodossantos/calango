@@ -20,7 +20,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Date pickers
 - Dialogs
 - Divider
-- Grid system
 - Lists
 - Menus
 - Navigation bar
@@ -41,6 +40,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tooltips
 - Top app bars
 - Typography
+
+## [0.1.0] 2023-05-30
+
+- Grid system
 
 <!--
 ## [0.0.0] YYYY-MM-DD
