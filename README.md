@@ -23,3 +23,15 @@ This project aims to deliver a framework that excels in performance, adheres to 
 ## Conclusion
 
 Calango is a powerful and performance-driven User Interface Framework that combines the strengths of Bootstrap and Material Design. By leveraging the capabilities of Gulp, Sass, HTML, and JavaScript, Calango empowers developers to create highly efficient and visually appealing web interfaces. With its focus on faster load times, adherence to responsive design principles, and meeting Google Lighthouse's requirements, Calango provides developers with a comprehensive toolset for building exceptional web applications.
+
+## Learn more!
+
+For more detailed information, we highly recommend checking out our project's [Wiki](https://github.com/msmachadodossantos/calango/wiki).
+
+The Wiki serves as a comprehensive knowledge base, providing in-depth documentation, tutorials, and additional resources.
+
+Whether you're a seasoned web developer or just starting out, the Wiki will be your go-to place for understanding the project's architecture, implementation details, and best practices.
+
+We encourage you to explore the Wiki for a deeper dive into our project's features and functionalities.
+
+Happy coding! 🙂
