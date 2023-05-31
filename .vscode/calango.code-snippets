@@ -25,6 +25,9 @@
         "scope": "sass, scss, css",
         "body": [
             "// Imports",
+            "@import \"../../variables\";",
+            "",
+            "// Declarations: classes, variables, mixins, functions, etc.",
             "",
             "// Small: Default",
             "",
@@ -32,7 +35,16 @@
             "@media screen and (min-width: 987px) {}",
             "",
             "// Large: Desktops",
-            "@media screen and (min-width: 1597px) {}"
+            "@media screen and (min-width: 1597px) {}",
+            "",
+            "// Color scheme: Light",
+            "@media (prefers-color-scheme: light) {}",
+            "",
+            "// Color scheme: Dark",
+            "@media (prefers-color-scheme: dark) {}",
+            "",
+            "// Print",
+            "@media print {}"
         ],
         "description": "Media queries"
     }
