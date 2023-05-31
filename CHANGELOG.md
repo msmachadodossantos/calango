@@ -41,6 +41,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Top app bars
 - Typography
 
+## [0.1.1] 2023-05-31
+
+### Added
+
+- calango_grid_system.code-snippets
+
+### Changed
+
+- calango.code-snippets
+- Core
+
 ## [0.1.0] 2023-05-30
 
 - Grid system
