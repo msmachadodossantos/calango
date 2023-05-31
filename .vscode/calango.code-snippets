@@ -47,5 +47,13 @@
             "@media print {}"
         ],
         "description": "Media queries"
-    }
+    },
+    "clng styles": {
+        "prefix": "clng styles",
+        "body": [
+            "<link rel=\"stylesheet\" href=\"path_to/dist/core/css/core.css\">",
+            "<link rel=\"stylesheet\" href=\"path_to/dist/grid_system/css/grid_system.css\">"
+        ],
+        "description": "Attach all styles from Calango"
+    },
 }
