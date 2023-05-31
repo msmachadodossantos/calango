@@ -1,0 +1,26 @@
+{
+    "clng-container-fluid": {
+        "prefix": "clng-container-fluid",
+        "body": [
+            "<div class=\"clng-container-fluid\">${1:content}</div> <!-- clng-container-fluid -->"
+        ],
+    },
+    "clng-container": {
+        "prefix": "clng-container",
+        "body": [
+            "<div class=\"clng-container\">${1:content}</div><!-- clng-container -->"
+        ],
+    },
+    "clng-row": {
+        "prefix": "clng-row",
+        "body": [
+            "<div class=\"clng-row\">${1:content}</div><!-- clng-row -->"
+        ],
+    },
+    "clng-col": {
+        "prefix": "clng-col",
+        "body": [
+            "<div class=\"clng-col-${1:span} clng-col-md-${2:span} clng-col-lg-${3:span}\">${4:content}</div><!-- clng-col-${1:span} clng-col-md-${2:span} clng-col-lg-${3:span} -->"
+        ],
+    },
+}
