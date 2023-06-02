@@ -10,11 +10,13 @@
 
 .clng-container-fluid {
   margin: auto;
+  padding: calc($PIXEL_RATIO / 2);
   width: 100%;
 }
 
 .clng-container {
   margin: auto;
+  padding: calc($PIXEL_RATIO / 2);
   max-width: 1597px;
 }
 
