@@ -20,7 +20,7 @@
     "clng-col": {
         "prefix": "clng-col",
         "body": [
-            "<div class=\"clng-col-${1:span} clng-col-md-${2:span} clng-col-lg-${3:span}\">${4:content}</div><!-- clng-col-${1:span} clng-col-md-${2:span} clng-col-lg-${3:span} -->"
+            "<div class=\"clng-col-${1:12} clng-col-md-${2:12} clng-col-lg-${3:12}\">${4:content}</div><!-- clng-col-${1:12} clng-col-md-${2:12} clng-col-lg-${3:12} -->"
         ],
     },
 }
