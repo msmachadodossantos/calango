@@ -27,8 +27,6 @@
             "// Imports",
             "@import \"../../variables\";",
             "",
-            "// Declarations: classes, variables, mixins, functions, etc.",
-            "",
             "// Small: Default",
             "",
             "// Medium: Smartphones and tablets",
@@ -52,7 +50,8 @@
         "prefix": "clng styles",
         "body": [
             "<link rel=\"stylesheet\" href=\"path_to/dist/core/css/core.css\">",
-            "<link rel=\"stylesheet\" href=\"path_to/dist/grid_system/css/grid_system.css\">"
+            "<link rel=\"stylesheet\" href=\"path_to/dist/grid_system/css/grid_system.css\">",
+            "<link rel=\"stylesheet\" href=\"path_to/dist/typography/css/typography.css\">"
         ],
         "description": "Attach all styles from Calango"
     },
