@@ -39,17 +39,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Time pickers
 - Tooltips
 - Top app bars
+- Visibility
+
+## [0.2.0] 2023-06-01
+
+### Added
+
 - Typography
+- .vscode/lipsum.code-snippets
+
+### Changed
+
+- grid_system
+- .vscode/calango.code-snippets
+- .vscode/calango_grid_system.code-snippets
 
 ## [0.1.1] 2023-05-31
 
 ### Added
 
-- calango_grid_system.code-snippets
+- .vscode/calango_grid_system.code-snippets
 
 ### Changed
 
-- calango.code-snippets
+- .vscode/calango.code-snippets
 - Core
 
 ## [0.1.0] 2023-05-30
