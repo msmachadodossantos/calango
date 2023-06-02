@@ -95,6 +95,49 @@ exports.core = series(
 
 // ---------------------------------------------------------------------------------------------------------------------
 
+const typographyStyleSrc = "src/typography/scss/**/*.*";
+const typographyStyleDist = "dist/typography/css/";
+const typographyScriptSrc = "src/typography/js/**/*.*";
+const typographyScriptDist = "dist/typography/js/";
+
+function cleanTypographyStyle() {
+  return gulp
+    .src(typographyStyleDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+function typographyStyle() {
+  return gulp
+    .src(typographyStyleSrc, { allowEmpty: true })
+    .pipe(sass({ outputStyle: "compressed" }, "").on("error", sass.logError))
+    .pipe(dest(typographyStyleDist));
+}
+
+function typographyScript() {
+  return gulp
+    .src(typographyScriptSrc, { allowEmpty: true })
+    .pipe(dest(typographyScriptDist))
+    .pipe(uglify())
+    .pipe(concat("core.js"))
+    .pipe(rename({ extname: ".min.js" }))
+    .pipe(dest(typographyScriptDist));
+}
+
+function cleanTypographyScript() {
+  return gulp
+    .src(typographyScriptDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+exports.core = series(
+  cleanTypographyStyle,
+  typographyStyle,
+  cleanTypographyScript,
+  typographyScript
+);
+
+// ---------------------------------------------------------------------------------------------------------------------
+
 exports.default = function () {
   watch(
     allSrc,
@@ -106,7 +149,11 @@ exports.default = function () {
       cleanGridSystemStyle,
       gridSystemStyle,
       cleanGridSystemScript,
-      gridSystemScript
+      gridSystemScript,
+      cleanTypographyStyle,
+      typographyStyle,
+      cleanTypographyScript,
+      typographyScript
     )
   );
 };
