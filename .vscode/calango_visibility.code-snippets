@@ -1,0 +1,30 @@
+{
+    "visible--sm": {
+        "prefix": "visible--sm",
+        "body": [
+            "visible--sm",
+        ],
+        "description": "Element visibility will only happen for \"--sm\"."
+    },
+    "visible--md": {
+        "prefix": "visible--md",
+        "body": [
+            "visible--md",
+        ],
+        "description": "Element visibility will only happen for \"--md\"."
+    },
+    "visible--lg": {
+        "prefix": "visible--lg",
+        "body": [
+            "visible--lg",
+        ],
+        "description": "Element visibility will only happen for \"--lg\"."
+    },
+    "visible--print": {
+        "prefix": "visible--print",
+        "body": [
+            "visible--print",
+        ],
+        "description": "Element visibility will only happen for \"--print\"."
+    },
+}
