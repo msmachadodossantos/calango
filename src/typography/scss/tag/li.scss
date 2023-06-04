@@ -1,0 +1,31 @@
+// Imports
+@import "../mixins";
+
+// Small: Default
+li {
+  ol,
+  ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+
+// Medium: Smartphones and tablets
+@media screen and (min-width: 987px) {
+}
+
+// Large: Desktops
+@media screen and (min-width: 1597px) {
+}
+
+// Color scheme: Light
+@media (prefers-color-scheme: light) {
+}
+
+// Color scheme: Dark
+@media (prefers-color-scheme: dark) {
+}
+
+// Print
+@media print {
+}

@@ -1,0 +1,64 @@
+// Imports
+@import "../../variables";
+
+// Declarations: classes, variables, mixins, functions, etc.
+@mixin text {
+  line-height: 150%;
+}
+
+@mixin display {
+  @include text;
+
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+@mixin headline {
+  @include text;
+
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+@mixin title {
+  @include text;
+
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@mixin body {
+  @include text;
+
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+@mixin label {
+  @include text;
+
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+@mixin monospace {
+  @include text;
+
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+@mixin indented-block {
+  margin: 0;
+  margin-block-start: $PIXEL_RATIO;
+  margin-block-end: $PIXEL_RATIO;
+  margin-inline-start: calc(2 * $PIXEL_RATIO);
+  margin-inline-end: calc(1 * $PIXEL_RATIO);
+  padding: 0;
+}

@@ -1,0 +1,32 @@
+// Imports
+@import "../mixins";
+
+// Small: Default
+blockquote {
+  @include indented-block;
+  @include label;
+
+  .author::before {
+    content: "— ";
+  }
+}
+
+// Medium: Smartphones and tablets
+@media screen and (min-width: 987px) {
+}
+
+// Large: Desktops
+@media screen and (min-width: 1597px) {
+}
+
+// Color scheme: Light
+@media (prefers-color-scheme: light) {
+}
+
+// Color scheme: Dark
+@media (prefers-color-scheme: dark) {
+}
+
+// Print
+@media print {
+}

@@ -1,0 +1,76 @@
+// Imports
+@import "mixins";
+
+// Small: Default
+.clng__text {
+  &--display {
+    @include display;
+  }
+
+  &--headline {
+    @include headline;
+  }
+
+  &--title {
+    @include title;
+  }
+
+  &--body {
+    @include body;
+  }
+
+  &--label {
+    @include label;
+  }
+
+  &--monospace {
+    @include headline;
+  }
+
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-yellow {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-yellow-orange {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-orange {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-red-orange {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-red {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-red-purple {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-purple {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-blue-purple {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-blue {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-blue-green {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-green {}
+  // TODO: add highlighted texts classes when the Color Palette component is implemented.
+  // &--highlighted-yellow-green {}
+}
+
+// Medium: Smartphones and tablets
+@media screen and (min-width: 987px) {
+}
+
+// Large: Desktops
+@media screen and (min-width: 1597px) {
+}
+
+// Color scheme: Light
+@media (prefers-color-scheme: light) {
+}
+
+// Color scheme: Dark
+@media (prefers-color-scheme: dark) {
+}
+
+// Print
+@media print {
+}
