@@ -138,6 +138,49 @@ exports.core = series(
 
 // ---------------------------------------------------------------------------------------------------------------------
 
+const visibilityStyleSrc = "src/visibility/scss/**/*.*";
+const visibilityStyleDist = "dist/visibility/css/";
+const visibilityScriptSrc = "src/visibility/js/**/*.*";
+const visibilityScriptDist = "dist/visibility/js/";
+
+function cleanVisibilityStyle() {
+  return gulp
+    .src(visibilityStyleDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+function visibilityStyle() {
+  return gulp
+    .src(visibilityStyleSrc, { allowEmpty: true })
+    .pipe(sass({ outputStyle: "compressed" }, "").on("error", sass.logError))
+    .pipe(dest(visibilityStyleDist));
+}
+
+function visibilityScript() {
+  return gulp
+    .src(visibilityScriptSrc, { allowEmpty: true })
+    .pipe(dest(visibilityScriptDist))
+    .pipe(uglify())
+    .pipe(concat("core.js"))
+    .pipe(rename({ extname: ".min.js" }))
+    .pipe(dest(visibilityScriptDist));
+}
+
+function cleanVisibilityScript() {
+  return gulp
+    .src(visibilityScriptDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+exports.core = series(
+  cleanVisibilityStyle,
+  visibilityStyle,
+  cleanVisibilityScript,
+  visibilityScript
+);
+
+// ---------------------------------------------------------------------------------------------------------------------
+
 exports.default = function () {
   watch(
     allSrc,
@@ -153,7 +196,11 @@ exports.default = function () {
       cleanTypographyStyle,
       typographyStyle,
       cleanTypographyScript,
-      typographyScript
+      typographyScript,
+      cleanVisibilityStyle,
+      visibilityStyle,
+      cleanVisibilityScript,
+      visibilityScript
     )
   );
 };
