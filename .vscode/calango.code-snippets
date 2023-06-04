@@ -51,7 +51,8 @@
         "body": [
             "<link rel=\"stylesheet\" href=\"path_to/dist/core/css/core.css\">",
             "<link rel=\"stylesheet\" href=\"path_to/dist/grid_system/css/grid_system.css\">",
-            "<link rel=\"stylesheet\" href=\"path_to/dist/typography/css/typography.css\">"
+            "<link rel=\"stylesheet\" href=\"path_to/dist/typography/css/typography.css\">",
+            "<link rel=\"stylesheet\" href=\"path_to/dist/visibility/css/visibility.css\">",
         ],
         "description": "Attach all styles from Calango"
     },
