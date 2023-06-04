@@ -1,0 +1,38 @@
+{
+    "clng__text--display": {
+        "prefix": "clng__text--display",
+        "body": [
+            "clng__text--display",
+        ],
+    },
+    "clng__text--headline": {
+        "prefix": "clng__text--headline",
+        "body": [
+            "clng__text--headline",
+        ],
+    },
+    "clng__text--title": {
+        "prefix": "clng__text--title",
+        "body": [
+            "clng__text--title",
+        ],
+    },
+    "clng__text--body": {
+        "prefix": "clng__text--body",
+        "body": [
+            "clng__text--body",
+        ],
+    },
+    "clng__text--label": {
+        "prefix": "clng__text--label",
+        "body": [
+            "clng__text--label",
+        ],
+    },
+    "clng__text--monospace": {
+        "prefix": "clng__text--monospace",
+        "body": [
+            "clng__text--monospace",
+        ],
+    },
+}
