@@ -1,0 +1,93 @@
+// Imports
+
+// Small: Default
+@media screen and (min-width: 0px) and (max-width: 986px) {
+  .visible {
+    &--sm {
+      display: initial !important;
+    }
+
+    &--md {
+      display: none;
+    }
+
+    &--lg {
+      display: none;
+    }
+
+    &--print {
+      display: none;
+    }
+  }
+}
+
+// Medium: Smartphones and tablets
+@media screen and (min-width: 987px) and (max-width: 1596px) {
+  .visible {
+    &--sm {
+      display: none;
+    }
+
+    &--md {
+      display: initial !important;
+    }
+
+    &--lg {
+      display: none;
+    }
+
+    &--print {
+      display: none;
+    }
+  }
+}
+
+// Large: Desktops
+@media screen and (min-width: 1597px) {
+  .visible {
+    &--sm {
+      display: none;
+    }
+
+    &--md {
+      display: none;
+    }
+
+    &--lg {
+      display: initial !important;
+    }
+
+    &--print {
+      display: none;
+    }
+  }
+}
+
+// Color scheme: Light
+@media (prefers-color-scheme: light) {
+}
+
+// Color scheme: Dark
+@media (prefers-color-scheme: dark) {
+}
+
+// Print
+@media print {
+  .visible {
+    &--sm {
+      display: none;
+    }
+
+    &--md {
+      display: none;
+    }
+
+    &--lg {
+      display: none;
+    }
+
+    &--print {
+      display: initial !important;
+    }
+  }
+}
