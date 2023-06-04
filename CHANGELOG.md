@@ -40,6 +40,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tooltips
 - Top app bars
 
+## [0.3.0] 2023-06-04
+
+### Added
+
+- Visibility
+
 ## [0.2.1] 2023-06-04
 
 ### Added
