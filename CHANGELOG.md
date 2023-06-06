@@ -16,7 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Carousel
 - Checkbox
 - Chips
-- Color system
 - Date pickers
 - Dialogs
 - Divider
@@ -39,6 +38,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Time pickers
 - Tooltips
 - Top app bars
+
+## [0.4.0] 2023-06-05
+
+### Added
+
+- Color system
+
+### Changed
+
+- .vscode/calango.code-snippets
 
 ## [0.3.0] 2023-06-04
 
