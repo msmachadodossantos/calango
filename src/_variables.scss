@@ -1,1 +1,10 @@
+@import "color_system/scss/mixins";
+
 $PIXEL_RATIO: 18px;
+
+$primary-color: #540d6e;
+$secondary-color: tone(shade($primary-color, 10%), 70%);
+$tertiary-color: #9ed0e6;
+$neutral-color: tone($primary-color, 80%);
+$neutral-variant-color: tone($primary-color, 90%);
+$error-color: hue(#ff0000, 10%);
