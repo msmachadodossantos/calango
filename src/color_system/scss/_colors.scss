@@ -1,0 +1,308 @@
+// Initializing the colors.
+/* ------------------------------------------------------- */
+
+// Tonal palettes
+$primary-0: shade($primary-color, 100%);
+$primary-10: shade($primary-color, 80%);
+$primary-20: shade($primary-color, 60%);
+$primary-30: shade($primary-color, 40%);
+$primary-40: shade($primary-color, 20%);
+$primary-50: shade($primary-color, 0%);
+$primary-60: tint($primary-color, 20%);
+$primary-70: tint($primary-color, 40%);
+$primary-80: tint($primary-color, 60%);
+$primary-90: tint($primary-color, 80%);
+$primary-95: tint($primary-color, 90%);
+$primary-99: tint($primary-color, 95%);
+$primary-100: tint($primary-color, 100%);
+
+$secondary-0: shade($secondary-color, 100%);
+$secondary-10: shade($secondary-color, 80%);
+$secondary-20: shade($secondary-color, 60%);
+$secondary-30: shade($secondary-color, 40%);
+$secondary-40: shade($secondary-color, 20%);
+$secondary-50: shade($secondary-color, 0%);
+$secondary-60: tint($secondary-color, 20%);
+$secondary-70: tint($secondary-color, 40%);
+$secondary-80: tint($secondary-color, 60%);
+$secondary-90: tint($secondary-color, 80%);
+$secondary-95: tint($secondary-color, 90%);
+$secondary-99: tint($secondary-color, 95%);
+$secondary-100: tint($secondary-color, 100%);
+
+$tertiary-0: shade($tertiary-color, 100%);
+$tertiary-10: shade($tertiary-color, 80%);
+$tertiary-20: shade($tertiary-color, 60%);
+$tertiary-30: shade($tertiary-color, 40%);
+$tertiary-40: shade($tertiary-color, 20%);
+$tertiary-50: shade($tertiary-color, 0%);
+$tertiary-60: tint($tertiary-color, 20%);
+$tertiary-70: tint($tertiary-color, 40%);
+$tertiary-80: tint($tertiary-color, 60%);
+$tertiary-90: tint($tertiary-color, 80%);
+$tertiary-95: tint($tertiary-color, 90%);
+$tertiary-99: tint($tertiary-color, 95%);
+$tertiary-100: tint($tertiary-color, 100%);
+
+$neutral-0: shade($neutral-color, 100%);
+$neutral-10: shade($neutral-color, 80%);
+$neutral-20: shade($neutral-color, 60%);
+$neutral-30: shade($neutral-color, 40%);
+$neutral-40: shade($neutral-color, 20%);
+$neutral-50: shade($neutral-color, 0%);
+$neutral-60: tint($neutral-color, 20%);
+$neutral-70: tint($neutral-color, 40%);
+$neutral-80: tint($neutral-color, 60%);
+$neutral-90: tint($neutral-color, 80%);
+$neutral-95: tint($neutral-color, 90%);
+$neutral-99: tint($neutral-color, 95%);
+$neutral-100: tint($neutral-color, 100%);
+
+$neutral-variant-0: shade($neutral-variant-color, 100%);
+$neutral-variant-10: shade($neutral-variant-color, 80%);
+$neutral-variant-20: shade($neutral-variant-color, 60%);
+$neutral-variant-30: shade($neutral-variant-color, 40%);
+$neutral-variant-40: shade($neutral-variant-color, 20%);
+$neutral-variant-50: shade($neutral-variant-color, 0%);
+$neutral-variant-60: tint($neutral-variant-color, 20%);
+$neutral-variant-70: tint($neutral-variant-color, 40%);
+$neutral-variant-80: tint($neutral-variant-color, 60%);
+$neutral-variant-90: tint($neutral-variant-color, 80%);
+$neutral-variant-95: tint($neutral-variant-color, 90%);
+$neutral-variant-99: tint($neutral-variant-color, 95%);
+$neutral-variant-100: tint($neutral-variant-color, 100%);
+
+$error-0: shade($error-color, 100%);
+$error-10: shade($error-color, 80%);
+$error-20: shade($error-color, 60%);
+$error-30: shade($error-color, 40%);
+$error-40: shade($error-color, 20%);
+$error-50: shade($error-color, 0%);
+$error-60: tint($error-color, 20%);
+$error-70: tint($error-color, 40%);
+$error-80: tint($error-color, 60%);
+$error-90: tint($error-color, 80%);
+$error-95: tint($error-color, 90%);
+$error-99: tint($error-color, 95%);
+$error-100: tint($error-color, 100%);
+
+// Key colors: accent & neutral
+$primary-light: $primary-40;
+$on-primary-light: $primary-100;
+$primary-container-light: $primary-90;
+$on-primary-container-light: $primary-10;
+
+$secondary-light: $secondary-40;
+$on-secondary-light: $secondary-100;
+$secondary-container-light: $secondary-90;
+$on-secondary-container-light: $secondary-10;
+
+$tertiary-light: $tertiary-40;
+$on-tertiary-light: $tertiary-100;
+$tertiary-container-light: $tertiary-90;
+$on-tertiary-container-light: $tertiary-10;
+
+$error-light: $error-40;
+$on-error-light: $error-100;
+$error-container-light: $error-90;
+$on-error-container-light: $error-10;
+
+$surface-dim-light: tint($neutral-color, 87%);
+$surface-light: tint($neutral-color, 98%);
+$surface-bright-light: tint($neutral-color, 98%);
+$surface-container-lowest-light: tint($neutral-color, 100%);
+$surface-container-low-light: tint($neutral-color, 96%);
+$surface-container-light: tint($neutral-color, 94%);
+$surface-container-high-light: tint($neutral-color, 92%);
+$surface-container-highest-light: tint($neutral-color, 90%);
+$on-surface-light: $neutral-variant-10;
+$on-surface-variant-light: $neutral-variant-30;
+$outline-light: $neutral-variant-50;
+$outline-variant-light: $neutral-variant-80;
+
+$primary-dark: $primary-80;
+$on-primary-dark: $primary-20;
+$primary-container-dark: $primary-30;
+$on-primary-container-dark: $primary-90;
+
+$secondary-dark: $secondary-80;
+$on-secondary-dark: $secondary-20;
+$secondary-container-dark: $secondary-30;
+$on-secondary-container-dark: $secondary-90;
+
+$tertiary-dark: $tertiary-80;
+$on-tertiary-dark: $tertiary-20;
+$tertiary-container-dark: $tertiary-30;
+$on-tertiary-container-dark: $tertiary-90;
+
+$error-dark: $error-80;
+$on-error-dark: $error-20;
+$error-container-dark: $error-30;
+$on-error-container-dark: $error-90;
+
+$surface-dim-dark: shade($neutral-color, 94%);
+$surface-dark: shade($neutral-color, 94%);
+$surface-bright-dark: shade($neutral-color, 76%);
+$surface-container-lowest-dark: shade($neutral-color, 96%);
+$surface-container-low-dark: shade($neutral-color, 90%);
+$surface-container-dark: shade($neutral-color, 88%);
+$surface-container-high-dark: shade($neutral-color, 83%);
+$surface-container-highest-dark: shade($neutral-color, 78%);
+$on-surface-dark: $neutral-variant-90;
+$on-surface-variant-dark: $neutral-variant-80;
+$outline-dark: $neutral-variant-60;
+$outline-variant-dark: $neutral-variant-30;
+
+// Instantiating the color variables in the browser.
+/* ------------------------------------------------------- */
+:root {
+  --primary-0: #{$primary-0};
+  --primary-10: #{$primary-10};
+  --primary-20: #{$primary-20};
+  --primary-30: #{$primary-30};
+  --primary-40: #{$primary-40};
+  --primary-50: #{$primary-50};
+  --primary-60: #{$primary-60};
+  --primary-70: #{$primary-70};
+  --primary-80: #{$primary-80};
+  --primary-90: #{$primary-90};
+  --primary-95: #{$primary-95};
+  --primary-99: #{$primary-99};
+  --primary-100: #{$primary-100};
+
+  --secondary-0: #{$secondary-0};
+  --secondary-10: #{$secondary-10};
+  --secondary-20: #{$secondary-20};
+  --secondary-30: #{$secondary-30};
+  --secondary-40: #{$secondary-40};
+  --secondary-50: #{$secondary-50};
+  --secondary-60: #{$secondary-60};
+  --secondary-70: #{$secondary-70};
+  --secondary-80: #{$secondary-80};
+  --secondary-90: #{$secondary-90};
+  --secondary-95: #{$secondary-95};
+  --secondary-99: #{$secondary-99};
+  --secondary-100: #{$secondary-100};
+
+  --tertiary-0: #{$tertiary-0};
+  --tertiary-10: #{$tertiary-10};
+  --tertiary-20: #{$tertiary-20};
+  --tertiary-30: #{$tertiary-30};
+  --tertiary-40: #{$tertiary-40};
+  --tertiary-50: #{$tertiary-50};
+  --tertiary-60: #{$tertiary-60};
+  --tertiary-70: #{$tertiary-70};
+  --tertiary-80: #{$tertiary-80};
+  --tertiary-90: #{$tertiary-90};
+  --tertiary-95: #{$tertiary-95};
+  --tertiary-99: #{$tertiary-99};
+  --tertiary-100: #{$tertiary-100};
+
+  --neutral-0: #{$neutral-0};
+  --neutral-10: #{$neutral-10};
+  --neutral-20: #{$neutral-20};
+  --neutral-30: #{$neutral-30};
+  --neutral-40: #{$neutral-40};
+  --neutral-50: #{$neutral-50};
+  --neutral-60: #{$neutral-60};
+  --neutral-70: #{$neutral-70};
+  --neutral-80: #{$neutral-80};
+  --neutral-90: #{$neutral-90};
+  --neutral-95: #{$neutral-95};
+  --neutral-99: #{$neutral-99};
+  --neutral-100: #{$neutral-100};
+
+  --neutral-variant-0: #{$neutral-variant-0};
+  --neutral-variant-10: #{$neutral-variant-10};
+  --neutral-variant-20: #{$neutral-variant-20};
+  --neutral-variant-30: #{$neutral-variant-30};
+  --neutral-variant-40: #{$neutral-variant-40};
+  --neutral-variant-50: #{$neutral-variant-50};
+  --neutral-variant-60: #{$neutral-variant-60};
+  --neutral-variant-70: #{$neutral-variant-70};
+  --neutral-variant-80: #{$neutral-variant-80};
+  --neutral-variant-90: #{$neutral-variant-90};
+  --neutral-variant-95: #{$neutral-variant-95};
+  --neutral-variant-99: #{$neutral-variant-99};
+  --neutral-variant-100: #{$neutral-variant-100};
+
+  --error-0: #{$error-0};
+  --error-10: #{$error-10};
+  --error-20: #{$error-20};
+  --error-30: #{$error-30};
+  --error-40: #{$error-40};
+  --error-50: #{$error-50};
+  --error-60: #{$error-60};
+  --error-70: #{$error-70};
+  --error-80: #{$error-80};
+  --error-90: #{$error-90};
+  --error-95: #{$error-95};
+  --error-99: #{$error-99};
+  --error-100: #{$error-100};
+
+  --primary-light: #{$primary-light};
+  --on-primary-light: #{$on-primary-light};
+  --primary-container-light: #{$primary-container-light};
+  --on-primary-container-light: #{$on-primary-container-light};
+
+  --secondary-light: #{$secondary-light};
+  --on-secondary-light: #{$on-secondary-light};
+  --secondary-container-light: #{$secondary-container-light};
+  --on-secondary-container-light: #{$on-secondary-container-light};
+
+  --tertiary-light: #{$tertiary-light};
+  --on-tertiary-light: #{$on-tertiary-light};
+  --tertiary-container-light: #{$tertiary-container-light};
+  --on-tertiary-container-light: #{$on-tertiary-container-light};
+
+  --error-light: #{$error-light};
+  --on-error-light: #{$on-error-light};
+  --error-container-light: #{$error-container-light};
+  --on-error-container-light: #{$on-error-container-light};
+
+  --surface-dim-light: #{$surface-dim-light};
+  --surface-light: #{$surface-light};
+  --surface-bright-light: #{$surface-bright-light};
+  --surface-container-lowest-light: #{$surface-container-lowest-light};
+  --surface-container-low-light: #{$surface-container-low-light};
+  --surface-container-light: #{$surface-container-light};
+  --surface-container-high-light: #{$surface-container-high-light};
+  --surface-container-highest-light: #{$surface-container-highest-light};
+  --on-surface-light: #{$on-surface-light};
+  --on-surface-variant-light: #{$on-surface-variant-light};
+  --outline-light: #{$outline-light};
+  --outline-variant-light: #{$outline-variant-light};
+
+  --primary-dark: #{$primary-dark};
+  --on-primary-dark: #{$on-primary-dark};
+  --primary-container-dark: #{$primary-container-dark};
+  --on-primary-container-dark: #{$on-primary-container-dark};
+
+  --secondary-dark: #{$secondary-dark};
+  --on-secondary-dark: #{$on-secondary-dark};
+  --secondary-container-dark: #{$secondary-container-dark};
+  --on-secondary-container-dark: #{$on-secondary-container-dark};
+
+  --tertiary-dark: #{$tertiary-dark};
+  --on-tertiary-dark: #{$on-tertiary-dark};
+  --tertiary-container-dark: #{$tertiary-container-dark};
+  --on-tertiary-container-dark: #{$on-tertiary-container-dark};
+
+  --error-dark: #{$error-dark};
+  --on-error-dark: #{$on-error-dark};
+  --error-container-dark: #{$error-container-dark};
+  --on-error-container-dark: #{$on-error-container-dark};
+
+  --surface-dim-dark: #{$surface-dim-dark};
+  --surface-dark: #{$surface-dark};
+  --surface-bright-dark: #{$surface-bright-dark};
+  --surface-container-lowest-dark: #{$surface-container-lowest-dark};
+  --surface-container-low-dark: #{$surface-container-low-dark};
+  --surface-container-dark: #{$surface-container-dark};
+  --surface-container-high-dark: #{$surface-container-high-dark};
+  --surface-container-highest-dark: #{$surface-container-highest-dark};
+  --on-surface-dark: #{$on-surface-dark};
+  --on-surface-variant-dark: #{$on-surface-variant-dark};
+  --outline-dark: #{$outline-dark};
+  --outline-variant-dark: #{$outline-variant-dark};
+}
