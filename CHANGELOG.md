@@ -39,7 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tooltips
 - Top app bars
 
-## [0.4.0] 2023-06-05
+## [0.4.0] 2023-06-06
 
 ### Added
 
