@@ -181,6 +181,49 @@ exports.core = series(
 
 // ---------------------------------------------------------------------------------------------------------------------
 
+const colorSystemStyleSrc = "src/color_system/scss/**/*.*";
+const colorSystemStyleDist = "dist/color_system/css/";
+const colorSystemScriptSrc = "src/color_system/js/**/*.*";
+const colorSystemScriptDist = "dist/color_system/js/";
+
+function cleanColorSystemStyle() {
+  return gulp
+    .src(colorSystemStyleDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+function colorSystemStyle() {
+  return gulp
+    .src(colorSystemStyleSrc, { allowEmpty: true })
+    .pipe(sass({ outputStyle: "compressed" }, "").on("error", sass.logError))
+    .pipe(dest(colorSystemStyleDist));
+}
+
+function colorSystemScript() {
+  return gulp
+    .src(colorSystemScriptSrc, { allowEmpty: true })
+    .pipe(dest(colorSystemScriptDist))
+    .pipe(uglify())
+    .pipe(concat("core.js"))
+    .pipe(rename({ extname: ".min.js" }))
+    .pipe(dest(colorSystemScriptDist));
+}
+
+function cleanColorSystemScript() {
+  return gulp
+    .src(colorSystemScriptDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+exports.core = series(
+  cleanColorSystemStyle,
+  colorSystemStyle,
+  cleanColorSystemScript,
+  colorSystemScript
+);
+
+// ---------------------------------------------------------------------------------------------------------------------
+
 exports.default = function () {
   watch(
     allSrc,
@@ -200,7 +243,11 @@ exports.default = function () {
       cleanVisibilityStyle,
       visibilityStyle,
       cleanVisibilityScript,
-      visibilityScript
+      visibilityScript,
+      cleanColorSystemStyle,
+      colorSystemStyle,
+      cleanColorSystemScript,
+      colorSystemScript
     )
   );
 };
