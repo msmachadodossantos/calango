@@ -2,7 +2,7 @@
 
 // Small: Default
 @media screen and (min-width: 0px) and (max-width: 986px) {
-  .visible {
+  .clng-visible {
     &--sm {
       display: initial !important;
     }
@@ -23,7 +23,7 @@
 
 // Medium: Smartphones and tablets
 @media screen and (min-width: 987px) and (max-width: 1596px) {
-  .visible {
+  .clng-visible {
     &--sm {
       display: none;
     }
@@ -44,7 +44,7 @@
 
 // Large: Desktops
 @media screen and (min-width: 1597px) {
-  .visible {
+  .clng-visible {
     &--sm {
       display: none;
     }
@@ -73,7 +73,7 @@
 
 // Print
 @media print {
-  .visible {
+  .clng-visible {
     &--sm {
       display: none;
     }
