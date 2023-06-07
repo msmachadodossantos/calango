@@ -10,7 +10,7 @@ This project aims to deliver a framework that excels in performance, adheres to 
 
 - **Performance Optimization:** Calango places a strong emphasis on optimizing performance to provide developers with lightning-fast load times. The framework streamlines code and utilizes advanced optimization techniques to minimize page load and render times. By reducing unnecessary network requests and optimizing asset delivery through the technique of [tree-shaking](https://en.wikipedia.org/wiki/Tree_shaking); defined through Gulp tasks; Calango ensures a seamless user experience.
 
-- **Bootstrap and Material Design Integration:** Calango leverages the power and familiarity of both Bootstrap and Material Design frameworks. It is inspired by the responsive grid system and extensive component library of Bootstrap and Material Design. This integration allows developers to create visually appealing and functional web interfaces effortlessly.
+- **Bootstrap and Material Design Integration:** Calango leverages the power and familiarity of both Bootstrap and Material Design frameworks. It is inspired by the responsive grid system of Bootstrap and the extensive component library of Material Design. This integration allows developers to create visually appealing and functional web interfaces effortlessly.
 
 - **Gulp Automation:** The framework harnesses the capabilities of [Gulp](https://gulpjs.com/), a popular task runner, to automate repetitive development tasks. Gulp streamlines processes such as Sass compilation, JavaScript minification, and file concatenation, allowing developers to focus on writing clean and maintainable code. Gulp's automation ensures a more efficient development workflow and enhances overall productivity.
 
