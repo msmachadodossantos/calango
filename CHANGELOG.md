@@ -39,6 +39,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tooltips
 - Top app bars
 
+## [0.4.2] 2023-06-09
+
+### Added
+
+- index.html
+
+### Changed
+
+- .vscode/calango.code-snippets
+- site/\*.\*
+- Core
+- Typography
+
 ## [0.4.1] 2023-06-07
 
 ### Changed
