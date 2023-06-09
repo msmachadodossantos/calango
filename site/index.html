@@ -25,9 +25,41 @@
             href="../dist/visibility/css/visibility.css">
 
       <style>
+            /* Small: Default */
             .clng-container {
                   margin-top: 8rem;
             }
+
+            .clng__logo {
+                  margin: auto;
+                  width: 144px;
+                  height: 144px;
+                  background-repeat: no-repeat;
+            }
+
+
+            /* Medium: Smartphones and tablets */
+            @media screen and (min-width: 987px) {}
+
+            /* Large: Desktops */
+            @media screen and (min-width: 1597px) {}
+
+            /* Color scheme: Light */
+            @media (prefers-color-scheme: light) {
+                  .clng__logo {
+                        background-image: url(asset/brand/calango__logo_black--144.webp);
+                  }
+            }
+
+            /* Color scheme: Dark */
+            @media (prefers-color-scheme: dark) {
+                  .clng__logo {
+                        background-image: url(asset/brand/calango__logo_white--144.webp);
+                  }
+            }
+
+            /* Print */
+            @media print {}
       </style>
 </head>
 
@@ -35,8 +67,7 @@
       <div class="clng-container">
             <div class="clng-row">
                   <div class="clng-col-12 clng-col-md-12 clng-col-lg-12 clng__text--center">
-                        <img src="asset/brand/calango__logo--144.webp"
-                             alt="Calango's logo">
+                        <div class="clng__logo"></div>
 
                         <h1 class="clng__text--display">
                               Hello World!
