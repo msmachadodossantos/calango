@@ -27,6 +27,22 @@
     @include headline;
   }
 
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--justify {
+    text-align: justify;
+  }
+
   // TODO: add highlighted texts classes when the Color Palette component is implemented.
   // &--highlighted {}
   // TODO: add highlighted texts classes when the Color Palette component is implemented.
