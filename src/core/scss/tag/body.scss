@@ -19,10 +19,18 @@ body {
 
 // Color scheme: Light
 @media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--surface-light);
+    color: var(--on-surface-light);
+  }
 }
 
 // Color scheme: Dark
 @media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--surface-dark);
+    color: var(--on-surface-dark);
+  }
 }
 
 // Print
