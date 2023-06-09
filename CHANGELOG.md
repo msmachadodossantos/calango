@@ -48,7 +48,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - .vscode/calango.code-snippets
-- site/\*.\*
+- site/asset/brand/\*.\*
+- site/index.html
 - Core
 - Typography
 
