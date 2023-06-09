@@ -49,11 +49,11 @@
     "clng styles": {
         "prefix": "clng styles",
         "body": [
+            "<link rel=\"stylesheet\" href=\"path_to/dist/color_system/css/color_system.css\">",
             "<link rel=\"stylesheet\" href=\"path_to/dist/core/css/core.css\">",
             "<link rel=\"stylesheet\" href=\"path_to/dist/grid_system/css/grid_system.css\">",
             "<link rel=\"stylesheet\" href=\"path_to/dist/typography/css/typography.css\">",
             "<link rel=\"stylesheet\" href=\"path_to/dist/visibility/css/visibility.css\">",
-            "<link rel=\"stylesheet\" href=\"path_to/dist/color_system/css/color_system.css\">",
         ],
         "description": "Attach all styles from Calango"
     },
