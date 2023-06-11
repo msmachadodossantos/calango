@@ -19,7 +19,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Date pickers
 - Dialogs
 - Divider
-- Lists
 - Menus
 - Navigation bar
 - Navigation drawer
@@ -38,6 +37,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Time pickers
 - Tooltips
 - Top app bars
+
+## [0.4.3] 2023-06-11
+
+### Changed
+
+- .vscode/calango_typography.code-snippets
+- dist/typography/css/typography.css
+- gulpfile.js
+- src/typography/scss/\_vendor.scss
 
 ## [0.4.2] 2023-06-09
 
