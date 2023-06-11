@@ -35,4 +35,22 @@
             "clng__text--monospace",
         ],
     },
+    "clng__text--center": {
+        "prefix": "clng__text--center",
+        "body": [
+            "clng__text--center",
+        ],
+    },
+    "clng__text--right": {
+        "prefix": "clng__text--right",
+        "body": [
+            "clng__text--right",
+        ],
+    },
+    "clng__text--justify": {
+        "prefix": "clng__text--justify",
+        "body": [
+            "clng__text--justify",
+        ],
+    },
 }
