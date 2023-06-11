@@ -8,11 +8,11 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass")(require("sass"));
 const uglify = require("gulp-uglify");
 
-// ---------------------------------------------------------------------------------------------------------------------
+/* ------------------------------------------------------- */
 
 const allSrc = "src/**/*.*";
 
-// ---------------------------------------------------------------------------------------------------------------------
+/* ------------------------------------------------------- */
 
 const coreStyleSrc = "src/core/scss/**/*.*";
 const coreStyleDist = "dist/core/css/";
@@ -50,7 +50,7 @@ function cleanCoreScript() {
 
 exports.core = series(cleanCoreStyle, coreStyle, cleanCoreScript, coreScript);
 
-// ---------------------------------------------------------------------------------------------------------------------
+/* ------------------------------------------------------- */
 
 const gridSystemStyleSrc = "src/grid_system/scss/**/*.*";
 const gridSystemStyleDist = "dist/grid_system/css/";
@@ -93,7 +93,7 @@ exports.core = series(
   gridSystemScript
 );
 
-// ---------------------------------------------------------------------------------------------------------------------
+/* ------------------------------------------------------- */
 
 const typographyStyleSrc = "src/typography/scss/**/*.*";
 const typographyStyleDist = "dist/typography/css/";
@@ -136,7 +136,7 @@ exports.core = series(
   typographyScript
 );
 
-// ---------------------------------------------------------------------------------------------------------------------
+/* ------------------------------------------------------- */
 
 const visibilityStyleSrc = "src/visibility/scss/**/*.*";
 const visibilityStyleDist = "dist/visibility/css/";
@@ -179,7 +179,7 @@ exports.core = series(
   visibilityScript
 );
 
-// ---------------------------------------------------------------------------------------------------------------------
+/* ------------------------------------------------------- */
 
 const colorSystemStyleSrc = "src/color_system/scss/**/*.*";
 const colorSystemStyleDist = "dist/color_system/css/";
@@ -222,7 +222,50 @@ exports.core = series(
   colorSystemScript
 );
 
-// ---------------------------------------------------------------------------------------------------------------------
+/* ------------------------------------------------------- */
+
+const listsStyleSrc = "src/lists/scss/**/*.*";
+const listsStyleDist = "dist/lists/css/";
+const listsScriptSrc = "src/lists/js/**/*.*";
+const listsScriptDist = "dist/lists/js/";
+
+function cleanListsStyle() {
+  return gulp
+    .src(listsStyleDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+function listsStyle() {
+  return gulp
+    .src(listsStyleSrc, { allowEmpty: true })
+    .pipe(sass({ outputStyle: "compressed" }, "").on("error", sass.logError))
+    .pipe(dest(listsStyleDist));
+}
+
+function listsScript() {
+  return gulp
+    .src(listsScriptSrc, { allowEmpty: true })
+    .pipe(dest(listsScriptDist))
+    .pipe(uglify())
+    .pipe(concat("core.js"))
+    .pipe(rename({ extname: ".min.js" }))
+    .pipe(dest(listsScriptDist));
+}
+
+function cleanListsScript() {
+  return gulp
+    .src(listsScriptDist, { allowEmpty: true, read: false })
+    .pipe(clean());
+}
+
+exports.core = series(
+  cleanListsStyle,
+  listsStyle,
+  cleanListsScript,
+  listsScript
+);
+
+/* ------------------------------------------------------- */
 
 exports.default = function () {
   watch(
@@ -251,3 +294,28 @@ exports.default = function () {
     )
   );
 };
+
+/* ------------------------------------------------------- */
+
+exports.dist = series(
+  cleanCoreStyle,
+  coreStyle,
+  cleanCoreScript,
+  coreScript,
+  cleanGridSystemStyle,
+  gridSystemStyle,
+  cleanGridSystemScript,
+  gridSystemScript,
+  cleanTypographyStyle,
+  typographyStyle,
+  cleanTypographyScript,
+  typographyScript,
+  cleanVisibilityStyle,
+  visibilityStyle,
+  cleanVisibilityScript,
+  visibilityScript,
+  cleanColorSystemStyle,
+  colorSystemStyle,
+  cleanColorSystemScript,
+  colorSystemScript
+);
